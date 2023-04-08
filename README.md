@@ -126,3 +126,10 @@ func GetExpressCompanyList() {
 1. 如果你发现了sdk中，没有某个推送消息或某个api，可自行加上，然后提交下pr
 2. 消息推送机制不健全：订单待支付状态时没有创建订单的消息推送，售后状态变更没有消息推送，需要自行用定时任务轮询小红书接口获取
 3. 由于授权码有效期为10分钟，为了避免店铺重新授权的情况，我们需要用定时任务定时刷新 access_token，保证不过期
+
+## 推荐开源项目
+
+- [企业微信 GO SDK](https://github.com/zsmhub/workweixin)
+- [抖店开放平台GO SDK](https://github.com/zsmhub/doudian-sdk)
+- [微信视频号GO SDK](https://github.com/zsmhub/wx-channels-sdk)
+- [小红书开放平台 GO SDK](https://github.com/zsmhub/xhs-sdk)
