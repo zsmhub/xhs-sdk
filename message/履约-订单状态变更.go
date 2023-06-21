@@ -5,9 +5,9 @@ import "encoding/json"
 // 文档：https://open.xiaohongshu.com/document/message/file/6/22
 
 type MsgFulfillmentStatusChange struct {
-	PackageId     string `json:"packageId"`
-	UpdateTime    int64  `json:"updateTime"`
-	PackageStatus int64  `json:"packageStatus"`
+	OrderId     string `json:"orderId"`
+	UpdateTime  int64  `json:"updateTime"`
+	OrderStatus int64  `json:"orderStatus"`
 }
 
 var _ MessageData = new(MsgFulfillmentStatusChange)

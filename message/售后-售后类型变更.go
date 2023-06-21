@@ -6,7 +6,7 @@ import "encoding/json"
 
 type MsgAfterSaleTransfer struct {
 	ReturnsId   string  `json:"returnsId"`
-	PackageId   string  `json:"packageId"`
+	OrderId     string  `json:"orderId"`
 	ReturnType  int64   `json:"returnType"`
 	RequestFrom int64   `json:"request_from"`
 	RefundFee   float64 `json:"refundFee"`

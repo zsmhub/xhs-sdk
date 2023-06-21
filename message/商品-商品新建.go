@@ -4,19 +4,19 @@ import "encoding/json"
 
 // 文档：https://open.xiaohongshu.com/document/message/file/5/18
 
-type MsgItemCreate struct {
-	ItemId     string `json:"itemId"`
+type MsgSkuCreate struct {
+	SkuId      string `json:"skuId"`
 	UpdateTime int64  `json:"updateTime"`
 }
 
-var _ MessageData = new(MsgItemCreate)
+var _ MessageData = new(MsgSkuCreate)
 
-func (MsgItemCreate) MsgTag() string {
-	return "msg_item_create"
+func (MsgSkuCreate) MsgTag() string {
+	return "msg_sku_create"
 }
 
-func (MsgItemCreate) DecodeData(data string) (MsgItemCreate, error) {
-	var resp MsgItemCreate
+func (MsgSkuCreate) DecodeData(data string) (MsgSkuCreate, error) {
+	var resp MsgSkuCreate
 	err := json.Unmarshal([]byte(data), &resp)
 	return resp, err
 }

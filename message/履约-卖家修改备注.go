@@ -5,7 +5,7 @@ import "encoding/json"
 // 文档：https://open.xiaohongshu.com/document/message/file/6/24
 
 type MsgFulfillmentSellerRemarkChange struct {
-	PackageId      string `json:"packageId"`
+	OrderId        string `json:"orderId"`
 	Operator       string `json:"operator"`
 	SellerMarkNote string `json:"sellerMarkNote"`
 	UpdateTime     int64  `json:"updateTime"`

@@ -4,19 +4,19 @@ import "encoding/json"
 
 // 文档：https://open.xiaohongshu.com/document/message/file/5/21
 
-type MsgItemDelete struct {
-	ItemId     string `json:"itemId"`
+type MsgSkuDelete struct {
+	SkuId      string `json:"skuId"`
 	UpdateTime int64  `json:"updateTime"`
 }
 
-var _ MessageData = new(MsgItemDelete)
+var _ MessageData = new(MsgSkuDelete)
 
-func (MsgItemDelete) MsgTag() string {
-	return "msg_item_delete"
+func (MsgSkuDelete) MsgTag() string {
+	return "msg_sku_delete"
 }
 
-func (MsgItemDelete) DecodeData(data string) (MsgItemDelete, error) {
-	var resp MsgItemDelete
+func (MsgSkuDelete) DecodeData(data string) (MsgSkuDelete, error) {
+	var resp MsgSkuDelete
 	err := json.Unmarshal([]byte(data), &resp)
 	return resp, err
 }
