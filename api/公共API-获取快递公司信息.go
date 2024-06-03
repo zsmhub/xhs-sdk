@@ -2,8 +2,6 @@ package api
 
 import "encoding/json"
 
-// 文档：https://open.xiaohongshu.com/document/api?apiNavigationId=2&id=16&gatewayId=103&gatewayVersionId=1661&apiId=5746
-
 type ReqGetExpressCompanyList struct {
 	BaseRequest
 }

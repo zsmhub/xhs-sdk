@@ -2,8 +2,6 @@ package message
 
 import "encoding/json"
 
-// 文档：https://open.xiaohongshu.com/document/message/file/6/25
-
 type MsgFulfillmentDeliverTimeChange struct {
 	OrderId       string `json:"orderId"`
 	OpenAddressId int64  `json:"openAddressId"`

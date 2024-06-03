@@ -2,8 +2,6 @@ package api
 
 import "encoding/json"
 
-// 文档：https://open.xiaohongshu.com/document/developer/file/4
-
 type ReqGetAccessToken struct {
 	BaseRequest
 	Code string `json:"code"`

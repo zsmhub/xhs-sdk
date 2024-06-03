@@ -2,8 +2,6 @@ package api
 
 import "encoding/json"
 
-// 文档：https://open.xiaohongshu.com/document/api?apiNavigationId=3&id=2&gatewayId=103&gatewayVersionId=1661&apiId=27241
-
 type ReqGetOrderList struct {
 	BaseRequest
 	StartTime   int64 `json:"startTime"`

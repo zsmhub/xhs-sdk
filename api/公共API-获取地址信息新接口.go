@@ -2,8 +2,6 @@ package api
 
 import "encoding/json"
 
-// 文档：https://open.xiaohongshu.com/document/api?apiNavigationId=2&id=78&gatewayId=103&gatewayVersionId=1661&apiId=23755
-
 type ReqGetZones struct {
 	BaseRequest
 	Code                 string `json:"code"`

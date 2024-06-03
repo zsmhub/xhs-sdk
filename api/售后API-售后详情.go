@@ -2,8 +2,6 @@ package api
 
 import "encoding/json"
 
-// 文档：https://open.xiaohongshu.com/document/api?apiNavigationId=4&id=19&gatewayId=103&gatewayVersionId=1661&apiId=5699
-
 type (
 	ReqGetAfterSaleDetail struct {
 		BaseRequest

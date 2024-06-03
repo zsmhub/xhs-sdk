@@ -2,8 +2,6 @@ package message
 
 import "encoding/json"
 
-// 文档：https://open.xiaohongshu.com/document/message/file/5/20
-
 type MsgItemAuditReject struct {
 	ItemId     string `json:"itemId"`
 	UpdateTime int64  `json:"updateTime"`

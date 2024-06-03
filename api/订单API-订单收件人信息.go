@@ -2,8 +2,6 @@ package api
 
 import "encoding/json"
 
-// 文档：https://open.xiaohongshu.com/document/api?apiNavigationId=3&id=4&gatewayId=103&gatewayVersionId=1661&apiId=27240
-
 type (
 	ReqGetOrderReceiverInfo struct {
 		BaseRequest

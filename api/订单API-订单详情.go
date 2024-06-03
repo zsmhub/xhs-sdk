@@ -2,8 +2,6 @@ package api
 
 import "encoding/json"
 
-// 文档：https://open.xiaohongshu.com/document/api?apiNavigationId=3&id=3&gatewayId=103&gatewayVersionId=1661&apiId=27242
-
 type ReqGetOrderDetail struct {
 	BaseRequest
 	OrderId string `json:"orderId"`

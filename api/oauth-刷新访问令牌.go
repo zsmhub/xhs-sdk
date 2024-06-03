@@ -2,8 +2,6 @@ package api
 
 import "encoding/json"
 
-// 文档：https://open.xiaohongshu.com/document/developer/file/4
-
 type ReqRefreshAccessToken struct {
 	BaseRequest
 	RefreshToken string `json:"refreshToken"`

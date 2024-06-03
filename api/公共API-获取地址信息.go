@@ -2,8 +2,6 @@ package api
 
 import "encoding/json"
 
-// 文档：https://open.xiaohongshu.com/document/api?apiNavigationId=2&id=47&gatewayId=103&gatewayVersionId=1661&apiId=9618
-
 type ReqGetNestZone struct {
 	BaseRequest
 }

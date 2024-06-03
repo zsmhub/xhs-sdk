@@ -2,8 +2,6 @@ package message
 
 import "encoding/json"
 
-// 文档：https://open.xiaohongshu.com/document/message/file/5/19
-
 type MsgSkuBuyable struct {
 	SkuId      string `json:"skuId"`
 	UpdateTime int64  `json:"updateTime"`

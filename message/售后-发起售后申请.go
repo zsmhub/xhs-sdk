@@ -2,8 +2,6 @@ package message
 
 import "encoding/json"
 
-// 文档：https://open.xiaohongshu.com/document/message/file/7/26
-
 type MsgAfterSaleCreate struct {
 	ReturnsId   string  `json:"returnsId"`
 	OrderId     string  `json:"orderId"`
