@@ -29,37 +29,37 @@ type (
 	}
 
 	RespGetAfterSaleInfoData struct {
-		AfterSaleInfo    RespGetAfterSaleInfoDataAfterSaleInfo    `json:"afterSaleInfo"`
-		LogisticsInfo    RespGetAfterSaleInfoDataLogisticsInfo    `json:"logisticsInfo"`
-		NegotiateRecords RespGetAfterSaleInfoDataNegotiateRecords `json:"negotiateRecords"`
+		AfterSaleInfo    *RespGetAfterSaleInfoDataAfterSaleInfo    `json:"afterSaleInfo"`
+		LogisticsInfo    *RespGetAfterSaleInfoDataLogisticsInfo    `json:"logisticsInfo"`
+		NegotiateRecords *RespGetAfterSaleInfoDataNegotiateRecords `json:"negotiateRecords"`
 	}
 
 	RespGetAfterSaleInfoDataAfterSaleInfo struct {
-		ReturnsId                string                     `json:"returnsId"`
-		ReturnType               int64                      `json:"returnType"`
-		ReasonId                 int64                      `json:"reasonId"`
-		ReasonNameZh             string                     `json:"reasonNameZh"`
-		Status                   int64                      `json:"status"`
-		UserId                   string                     `json:"userId"`
-		OrderId                  string                     `json:"orderId"`
-		ApplyTime                int64                      `json:"applyTime"`
-		UpdatedAt                int64                      `json:"updatedAt"`
-		ExpireTime               int64                      `json:"expireTime"`
-		ReturnAddress            AfterSaleInfoReturnAddress `json:"return_address"`
-		ProofPhotos              []string                   `json:"proofPhotos"`
-		Desc                     string                     `json:"desc"`
-		SupportCarriageInsurance bool                       `json:"supportCarriageInsurance"`
-		OpenAddressId            string                     `json:"openAddressId"`
-		Skus                     []AfterSaleInfoSKU         `json:"skus"`
-		ExchangeSKUs             []AfterSaleInfoSKU         `json:"exchangeSKUs"`
-		CloseReasonZh            string                     `json:"closeReasonZh"`
-		ReturnsTag               int64                      `json:"returnsTag"`
-		AppliedShipFeeAmountYuan float64                    `json:"appliedShipFeeAmountYuan"`
-		AppliedSkusAmountYuan    float64                    `json:"appliedSkusAmountYuan"`
-		ExpectedRefundAmountYuan float64                    `json:"expectedRefundAmountYuan"`
-		RefundAmountYuan         float64                    `json:"refundAmountYuan"`
-		RefundStatus             int64                      `json:"refundStatus"`
-		CargoStatus              int64                      `json:"cargoStatus"`
+		ReturnsId                string                      `json:"returnsId"`
+		ReturnType               int64                       `json:"returnType"`
+		ReasonId                 int64                       `json:"reasonId"`
+		ReasonNameZh             string                      `json:"reasonNameZh"`
+		Status                   int64                       `json:"status"`
+		UserId                   string                      `json:"userId"`
+		OrderId                  string                      `json:"orderId"`
+		ApplyTime                int64                       `json:"applyTime"`
+		UpdatedAt                int64                       `json:"updatedAt"`
+		ExpireTime               int64                       `json:"expireTime"`
+		ReturnAddress            *AfterSaleInfoReturnAddress `json:"return_address"`
+		ProofPhotos              []string                    `json:"proofPhotos"`
+		Desc                     string                      `json:"desc"`
+		SupportCarriageInsurance bool                        `json:"supportCarriageInsurance"`
+		OpenAddressId            string                      `json:"openAddressId"`
+		Skus                     []AfterSaleInfoSKU          `json:"skus"`
+		ExchangeSKUs             []AfterSaleInfoSKU          `json:"exchangeSKUs"`
+		CloseReasonZh            string                      `json:"closeReasonZh"`
+		ReturnsTag               int64                       `json:"returnsTag"`
+		AppliedShipFeeAmountYuan float64                     `json:"appliedShipFeeAmountYuan"`
+		AppliedSkusAmountYuan    float64                     `json:"appliedSkusAmountYuan"`
+		ExpectedRefundAmountYuan float64                     `json:"expectedRefundAmountYuan"`
+		RefundAmountYuan         float64                     `json:"refundAmountYuan"`
+		RefundStatus             int64                       `json:"refundStatus"`
+		CargoStatus              int64                       `json:"cargoStatus"`
 	}
 	AfterSaleInfoReturnAddress struct {
 		Province    string `json:"province"`
