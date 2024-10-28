@@ -25,44 +25,44 @@ type (
 		Data RespGetOrderDetailData `json:"data"`
 	}
 	RespGetOrderDetailData struct {
-		OrderId                  string         `json:"orderId"`
-		OrderType                int64          `json:"orderType"`
-		OrderStatus              int64          `json:"orderStatus"`
-		OrderAfterSalesStatus    int64          `json:"orderAfterSalesStatus"`
-		CancelStatus             int64          `json:"cancelStatus"`
-		CreatedTime              int64          `json:"createdTime"`
-		PaidTime                 int64          `json:"paidTime"`
-		UpdateTime               int64          `json:"updateTime"`
-		DeliveryTime             int64          `json:"deliveryTime"`
-		CancelTime               int64          `json:"cancelTime"`
-		FinishTime               int64          `json:"finishTime"`
-		PromiseLastDeliveryTime  int64          `json:"promiseLastDeliveryTime"`
-		PlanInfoId               string         `json:"planInfoId"`
-		PlanInfoName             string         `json:"planInfoName"`
-		ReceiverCountryId        string         `json:"receiverCountryId"`
-		ReceiverCountryName      string         `json:"receiverCountryName"`
-		ReceiverProvinceId       string         `json:"receiverProvinceId"`
-		ReceiverProvinceName     string         `json:"receiverProvinceName"`
-		ReceiverCityId           string         `json:"receiverCityId"`
-		ReceiverCityName         string         `json:"receiverCityName"`
-		ReceiverDistrictId       string         `json:"receiverDistrictId"`
-		ReceiverDistrictName     string         `json:"receiverDistrictName"`
-		CustomerRemark           string         `json:"customerRemark"`
-		SellerRemark             string         `json:"sellerRemark"`
-		SellerRemarkFlag         int64          `json:"sellerRemarkFlag"`
-		PresaleDeliveryStartTime int64          `json:"presaleDeliveryStartTime"`
-		PresaleDeliveryEndTime   int64          `json:"presaleDeliveryEndTime"`
-		SkuList                  []OrderSkuList `json:"skuList"`
-		OriginalOrderId          string         `json:"originalOrderId"`
-		TotalNetWeightAmount     int64          `json:"totalNetWeightAmount"`
-		TotalPayAmount           int64          `json:"totalPayAmount"`
-		TotalShippingFree        int64          `json:"totalShippingFree"`
-		Unpack                   bool           `json:"unpack"`
-		ExpressTrackingNo        string         `json:"expressTrackingNo"`
-		ExpressCompanyCode       string         `json:"expressCompanyCode"`
-		ReceiverName             string         `json:"receiverName"`
-		ReceiverPhone            string         `json:"receiverPhone"`
-		ReceiverAddress          string         `json:"receiverAddress"`
+		OrderId                  string          `json:"orderId"`
+		OrderType                int64           `json:"orderType"`
+		OrderStatus              int64           `json:"orderStatus"`
+		OrderAfterSalesStatus    int64           `json:"orderAfterSalesStatus"`
+		CancelStatus             int64           `json:"cancelStatus"`
+		CreatedTime              int64           `json:"createdTime"`
+		PaidTime                 int64           `json:"paidTime"`
+		UpdateTime               int64           `json:"updateTime"`
+		DeliveryTime             int64           `json:"deliveryTime"`
+		CancelTime               int64           `json:"cancelTime"`
+		FinishTime               int64           `json:"finishTime"`
+		PromiseLastDeliveryTime  int64           `json:"promiseLastDeliveryTime"`
+		PlanInfoId               string          `json:"planInfoId"`
+		PlanInfoName             string          `json:"planInfoName"`
+		ReceiverCountryId        string          `json:"receiverCountryId"`
+		ReceiverCountryName      string          `json:"receiverCountryName"`
+		ReceiverProvinceId       string          `json:"receiverProvinceId"`
+		ReceiverProvinceName     string          `json:"receiverProvinceName"`
+		ReceiverCityId           string          `json:"receiverCityId"`
+		ReceiverCityName         string          `json:"receiverCityName"`
+		ReceiverDistrictId       string          `json:"receiverDistrictId"`
+		ReceiverDistrictName     string          `json:"receiverDistrictName"`
+		CustomerRemark           string          `json:"customerRemark"`
+		SellerRemark             string          `json:"sellerRemark"`
+		SellerRemarkFlag         int64           `json:"sellerRemarkFlag"`
+		PresaleDeliveryStartTime int64           `json:"presaleDeliveryStartTime"`
+		PresaleDeliveryEndTime   int64           `json:"presaleDeliveryEndTime"`
+		SkuList                  []*OrderSkuList `json:"skuList"`
+		OriginalOrderId          string          `json:"originalOrderId"`
+		TotalNetWeightAmount     int64           `json:"totalNetWeightAmount"`
+		TotalPayAmount           int64           `json:"totalPayAmount"`
+		TotalShippingFree        int64           `json:"totalShippingFree"`
+		Unpack                   bool            `json:"unpack"`
+		ExpressTrackingNo        string          `json:"expressTrackingNo"`
+		ExpressCompanyCode       string          `json:"expressCompanyCode"`
+		ReceiverName             string          `json:"receiverName"`
+		ReceiverPhone            string          `json:"receiverPhone"`
+		ReceiverAddress          string          `json:"receiverAddress"`
 		BoundExtendInfo          struct {
 			PayNo          string   `json:"payNo"`
 			PayChannel     string   `json:"payChannel"`
@@ -88,7 +88,12 @@ type (
 			ExpressCompanyCode string   `json:"expressCompanyCode"`
 			SkuIdList          []string `json:"skuIdList"`
 		} `json:"simpleDeliveryOrderList"`
-		Logistics string `json:"logistics"`
+		Logistics                   string `json:"logistics"`
+		TotalDepositAmountTotal     int64  `json:"totalDepositAmountTotal"`
+		TotalMerchantDiscount       int64  `json:"totalMerchantDiscount"`
+		TotalRedDiscount            int64  `json:"totalRedDiscount"`
+		MerchantActualReceiveAmount int64  `json:"merchantActualReceiveAmount"`
+		UserId                      string `json:"userId"`
 	}
 	OrderSkuList struct {
 		SkuId                 string               `json:"skuId"`
