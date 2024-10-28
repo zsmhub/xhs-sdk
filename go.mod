@@ -1,4 +1,4 @@
-module github.com/zsmhub/xhs-sdk
+module github.com/mryee2023/xhs-sdk
 
 go 1.18
 
