@@ -30,45 +30,46 @@ type (
 		BaseResponse
 		Data RespGetOrderListData `json:"data"`
 	}
+	RespGetOrderListDateItem struct {
+		OrderId                 string `json:"orderId"`
+		OrderType               int64  `json:"orderType"`
+		OrderStatus             int64  `json:"orderStatus"`
+		OrderAfterSalesStatus   int64  `json:"orderAfterSalesStatus"`
+		CancelStatus            int64  `json:"cancelStatus"`
+		CreatedTime             int64  `json:"createdTime"`
+		PaidTime                int64  `json:"paidTime"`
+		UpdateTime              int64  `json:"updateTime"`
+		DeliveryTime            int64  `json:"deliveryTime"`
+		CancelTime              int64  `json:"cancelTime"`
+		FinishTime              int64  `json:"finishTime"`
+		PromiseLastDeliveryTime int64  `json:"promiseLastDeliveryTime"`
+		PlanInfoId              string `json:"planInfoId"`
+		PlanInfoName            string `json:"planInfoName"`
+		ReceiverCountryId       string `json:"receiverCountryId"`
+		ReceiverCountryName     string `json:"receiverCountryName"`
+		ReceiverProvinceId      string `json:"receiverProvinceId"`
+		ReceiverProvinceName    string `json:"receiverProvinceName"`
+		ReceiverCityId          string `json:"receiverCityId"`
+		ReceiverCityName        string `json:"receiverCityName"`
+		ReceiverDistrictId      string `json:"receiverDistrictId"`
+		ReceiverDistrictName    string `json:"receiverDistrictName"`
+		CustomerRemark          string `json:"customerRemark"`
+		SellerRemark            string `json:"sellerRemark"`
+		SellerRemarkFlag        int64  `json:"sellerRemarkFlag"`
+		OriginalOrderId         string `json:"originalOrderId"`
+		Logistics               string `json:"logistics"`
+		TotalDepositAmount      int64  `json:"totalDepositAmount"`
+		TotalMerchantDiscount   int64  `json:"totalMerchantDiscount"`
+		TotalRedDiscount        int64  `json:"totalRedDiscount"`
+		PaymentType             int64  `json:"paymentType"`
+		UserId                  string `json:"userId"`
+	}
 	RespGetOrderListData struct {
-		Total     int64 `json:"total"`
-		PageNo    int64 `json:"pageNo"`
-		PageSize  int64 `json:"pageSize"`
-		MaxPageNo int64 `json:"maxPageNo"`
-		OrderList []struct {
-			OrderId                 string `json:"orderId"`
-			OrderType               int64  `json:"orderType"`
-			OrderStatus             int64  `json:"orderStatus"`
-			OrderAfterSalesStatus   int64  `json:"orderAfterSalesStatus"`
-			CancelStatus            int64  `json:"cancelStatus"`
-			CreatedTime             int64  `json:"createdTime"`
-			PaidTime                int64  `json:"paidTime"`
-			UpdateTime              int64  `json:"updateTime"`
-			DeliveryTime            int64  `json:"deliveryTime"`
-			CancelTime              int64  `json:"cancelTime"`
-			FinishTime              int64  `json:"finishTime"`
-			PromiseLastDeliveryTime int64  `json:"promiseLastDeliveryTime"`
-			PlanInfoId              string `json:"planInfoId"`
-			PlanInfoName            string `json:"planInfoName"`
-			ReceiverCountryId       string `json:"receiverCountryId"`
-			ReceiverCountryName     string `json:"receiverCountryName"`
-			ReceiverProvinceId      string `json:"receiverProvinceId"`
-			ReceiverProvinceName    string `json:"receiverProvinceName"`
-			ReceiverCityId          string `json:"receiverCityId"`
-			ReceiverCityName        string `json:"receiverCityName"`
-			ReceiverDistrictId      string `json:"receiverDistrictId"`
-			ReceiverDistrictName    string `json:"receiverDistrictName"`
-			CustomerRemark          string `json:"customerRemark"`
-			SellerRemark            string `json:"sellerRemark"`
-			SellerRemarkFlag        int64  `json:"sellerRemarkFlag"`
-			OriginalOrderId         string `json:"originalOrderId"`
-			Logistics               string `json:"logistics"`
-			TotalDepositAmount      int64  `json:"totalDepositAmount"`
-			TotalMerchantDiscount   int64  `json:"totalMerchantDiscount"`
-			TotalRedDiscount        int64  `json:"totalRedDiscount"`
-			PaymentType             int64  `json:"paymentType"`
-			UserId                  string `json:"userId"`
-		} `json:"orderList"`
+		Total     int64                       `json:"total"`
+		PageNo    int64                       `json:"pageNo"`
+		PageSize  int64                       `json:"pageSize"`
+		MaxPageNo int64                       `json:"maxPageNo"`
+		OrderList []*RespGetOrderListDateItem `json:"orderList"`
 	}
 )
 
