@@ -1,7 +1,7 @@
 package xhs_sdk
 
 import (
-	"github.com/zsmhub/xhs-sdk/api"
+	"github.com/mryee2023/xhs-sdk/api"
 )
 
 // 小红书开放平台 sdk 调用入口

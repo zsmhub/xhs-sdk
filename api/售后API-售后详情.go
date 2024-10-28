@@ -1,6 +1,6 @@
 package api
 
-import "encoding/json"
+import json "github.com/bytedance/sonic"
 
 type (
 	ReqGetAfterSaleInfo struct {

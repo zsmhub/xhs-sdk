@@ -5,6 +5,7 @@ go 1.18
 require (
 	github.com/labstack/echo/v4 v4.1.16
 	github.com/valyala/fasthttp v1.26.0
+	github.com/bytedance/sonic v1.12.1
 )
 
 require (

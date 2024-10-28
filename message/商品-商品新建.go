@@ -1,6 +1,6 @@
 package message
 
-import "encoding/json"
+import json "github.com/bytedance/sonic"
 
 type MsgSkuCreate struct {
 	SkuId      string `json:"skuId"`

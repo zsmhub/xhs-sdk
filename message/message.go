@@ -1,7 +1,7 @@
 package message
 
 import (
-	"encoding/json"
+	json "github.com/bytedance/sonic"
 )
 
 type MessageData interface {

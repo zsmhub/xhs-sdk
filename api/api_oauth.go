@@ -1,11 +1,12 @@
 package api
 
 import (
-	"encoding/json"
 	"errors"
 	"fmt"
 	"net/url"
 	"time"
+
+	json "github.com/bytedance/sonic"
 )
 
 type OAuthClient struct {
