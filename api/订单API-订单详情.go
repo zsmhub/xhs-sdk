@@ -88,7 +88,12 @@ type (
 			ExpressCompanyCode string   `json:"expressCompanyCode"`
 			SkuIdList          []string `json:"skuIdList"`
 		} `json:"simpleDeliveryOrderList"`
-		Logistics string `json:"logistics"`
+		Logistics                   string `json:"logistics"`
+		TotalDepositAmountTotal     int64  `json:"totalDepositAmountTotal"`
+		TotalMerchantDiscount       int64  `json:"totalMerchantDiscount"`
+		TotalRedDiscount            int64  `json:"totalRedDiscount"`
+		MerchantActualReceiveAmount int64  `json:"merchantActualReceiveAmount"`
+		UserId                      string `json:"userId"`
 	}
 	OrderSkuList struct {
 		SkuId                 string               `json:"skuId"`

@@ -63,6 +63,11 @@ type (
 			SellerRemarkFlag        int64  `json:"sellerRemarkFlag"`
 			OriginalOrderId         string `json:"originalOrderId"`
 			Logistics               string `json:"logistics"`
+			TotalDepositAmount      int64  `json:"totalDepositAmount"`
+			TotalMerchantDiscount   int64  `json:"totalMerchantDiscount"`
+			TotalRedDiscount        int64  `json:"totalRedDiscount"`
+			PaymentType             int64  `json:"paymentType"`
+			UserId                  string `json:"userId"`
 		} `json:"orderList"`
 	}
 )
