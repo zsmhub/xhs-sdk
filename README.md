@@ -4,7 +4,7 @@ Go语言实现小红书开放平台sdk，使用简单，扩展灵活
 
 ### 平台链接
 
-- [小红书开放平台](https://open.xiaohongshu.com/home?from=/application/subscribeMsg)
+- [小红书开放平台](https://open.xiaohongshu.com/home)
 - [小红书商家后台](https://customer.xiaohongshu.com/login?service=https://ark.xiaohongshu.com/ark/login)
 
 ### 安装命令
